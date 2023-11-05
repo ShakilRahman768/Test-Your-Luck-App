@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:layout_toStartOf="@+id/coinCountTextView"
+        android:src="@drawable/chips" />
+
+
+    <TextView
+        android:id="@+id/coinCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
+        android:text="30"
+        android:textColor="#FFC107"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="34dp"
+        android:layout_centerHorizontal="true"
+        android:text="Stage 4"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="250dp"
+        android:layout_height="7dp"
+        android:layout_alignBottom="@+id/stage"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="-24dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_bar_gradient" />
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_centerInParent="true">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:columnCount="3">
+
+            <ImageView
+                android:id="@+id/card1"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:padding="12dp"
+                android:background="#F9F9F9"
+                android:src="@drawable/card" />
+
+            <ImageView
+                android:id="@+id/card2"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/card" />
+
+            <ImageView
+                android:id="@+id/card3"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/card" />
+
+            <ImageView
+                android:id="@+id/card4"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/card" />
+
+            <ImageView
+                android:id="@+id/card5"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/card" />
+
+            <ImageView
+                android:id="@+id/card6"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/card" />
+
+            <ImageView
+                android:id="@+id/card7"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/card" />
+
+            <ImageView
+                android:id="@+id/card8"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/card" />
+
+            <ImageView
+                android:id="@+id/card9"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/card" />
+
+
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="85dp"
+        android:text="Next Stage"
+        android:padding="10dp"
+        android:background="@drawable/button_yellow"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="85dp"
+        android:text="Try Again"
+        android:padding="10dp"
+        android:background="@drawable/button_red"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/Again"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="85dp"
+        android:text="Life"
+        android:padding="10dp"
+        android:background="@drawable/button_green"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textViewNote"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Note: 5 card right 4 card worng. It is the moderate stage."
+        android:visibility="visible"
+        />
+
+
+</RelativeLayout>
